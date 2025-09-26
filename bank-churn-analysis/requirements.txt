@@ -1,0 +1,34 @@
+# Minimal requirements for the Streamlit app and Jupyter notebooks.
+# Keep versions flexible for pull-requests; maintainers can pin specific versions in PRs or a constraints file.
+
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+scipy
+scikit-learn
+jupyter
+notebook
+ipykernel
+nbformat
+
+# Optional / development helpers (uncomment if needed)
+# black
+# isort
+# flake8
+
+# Example pinned-versions suggestion (for CI or reproducible env):
+# streamlit==1.30.0
+# pandas==2.1.0
+# numpy==1.26.0
+# matplotlib==3.8.0
+# seaborn==0.13.2
+# plotly==5.16.0
+# scipy==1.11.0
+# scikit-learn==1.3.2
+# jupyter==1.0.0
+# notebook==7.7.0
+# ipykernel==6.26.0
+# nbformat==5.9.0
