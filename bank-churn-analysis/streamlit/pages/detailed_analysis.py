@@ -54,7 +54,7 @@ def render_overview(df, churned_df, analysis_objects):
     # show overall churn chart if present in pickle
     if "churn rate figure" in analysis_objects:
         st.subheader("Overall churn distribution")
-        st.pyplot(analysis_objects["churn rate figure"])
+        st.pyplot(analysis_objects["churn rate figure"].get_figure())
     else:
         st.info("Overall churn chart not available in saved analysis. Showing key metrics above.")
     st.markdown("#### High-level drivers (from analysis)")
