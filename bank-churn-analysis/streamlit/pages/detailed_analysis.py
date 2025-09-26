@@ -8,7 +8,8 @@ import seaborn as sns
 # Load the cleaned data
 @st.cache_data
 def load_analysis_objects():
-    path = r'bank-churn-analysis\notebooks\analysis_objects.pkl'
+    
+    path = r'bank-churn-analysis/notebooks/analysis_objects.pkl'
 
     with open(path, 'rb') as f:
         return pickle.load(f)
