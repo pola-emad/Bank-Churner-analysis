@@ -52,17 +52,7 @@ def render_overview(df, churned_df, analysis_objects):
     cols[1].metric("Total churners", f"{total_churn:,}")
     cols[2].metric("Overall churn rate", f"{churn_rate:.2f}%")
     # show overall churn chart if present in pickle
-    if "churn rate figure" in analysis_objects:
-        st.subheader("Overall churn distribution")
-        st.pyplot(analysis_objects["churn rate figure"].get_figure())
-    else:
-        st.info("Overall churn chart not available in saved analysis. Showing key metrics above.")
-    st.markdown("#### High-level drivers (from analysis)")
-    st.markdown(
-        "- Top categorical signals: gender, income category, education level.\n"
-        "- Top numerical signals: Total_Trans_Ct, Total_Ct_Chng_Q4_Q1, Total_Revolving_Bal.\n"
-        "- Early priorities: low‑income (\"Less than $40K\") and low‑activity (Total_Trans_Ct ≤ 9) segments."
-    )
+
 
 def render_churn_by_age(obj):
     st.header("Churn by Age")
